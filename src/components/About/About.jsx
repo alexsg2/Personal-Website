@@ -9,9 +9,9 @@ const About = () => {
       <div className="info-section">
         <h2 className="about-header">about me</h2>
         <p className="about-text">            
-          Welcome to my virtual portfolio! Here, I'll showcase a collection of both personal and collaborative projects that offer a 
-          glimpse into my creative journey. I've ventured across a spectrum of programming languages from all end. For more info,
-          feel free to explore the "Skills" section.
+          Welcome to my personal website! Here, I present a good amount of personal and collaborative projects that provide a window 
+          into my creative journey. Along the way, I've mastered a diverse spectrum of programming languages. For further details, 
+          I invite you to delve into the "Skills" section.
         </p>
         <p className="about-text">      
           During my spare time, I like working on projects that use the skills I've learned from my studies or picked up on my own. 

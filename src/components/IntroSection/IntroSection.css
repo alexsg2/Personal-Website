@@ -12,7 +12,7 @@
   
   /* Container for both content and picture */
   .intro-content-container {
-    padding: 0 100px;
+    margin-right: 65px;
     display: flex;
     align-items: center;
   }
@@ -72,13 +72,6 @@
   
   .link-style:hover {
     background-color: gray;
-  }
-  
-  /* Buttons container */
-  .buttons-container {
-    display: flex;
-    justify-content: space-between;
-    width: 55%;
   }
   
   /* Margin for intro links */
