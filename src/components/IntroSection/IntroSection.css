@@ -74,24 +74,6 @@
     background-color: gray;
   }
   
-  /* Circle button styles */
-  .btn-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: purple;
-    border: 1px solid black;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .btn-circle:hover {
-    background-color: #7A4988;
-  }
-  
   /* Buttons container */
   .buttons-container {
     display: flex;

@@ -19,7 +19,7 @@ function IntroSection() {
         <div className="intro-content-container">
           <div className="intro-content">
             <h1 className="light-text">Hello! I am</h1>
-            <h1 className="purple-text">alexander georgiev</h1>
+            <h1 className="purple-text">Alexander Georgiev</h1>
             <p className="large-text">
               Welcome to my website/portfolio. Explore, enjoy, and reach out to me!
             </p>

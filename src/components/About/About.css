@@ -1,0 +1,75 @@
+.about-section {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .info-section, .photo-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .about-header {
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+    margin-top: 160px; /* Adjust this value for desired spacing */
+    margin-bottom: 40px;
+    position: relative; /* Add relative positioning */
+  }
+  
+  .about-header::after {
+    content: "";
+    display: block;
+    width: 300px; /* Adjust the width of the line */
+    height: 5px; /* Adjust the height of the line */
+    background-color: #000000;
+    position: absolute;
+    bottom: -10px; /* Adjust the distance from the header text */
+    left: 50%; /* Center the line */
+    transform: translateX(-50%);
+  }
+  
+  .about-text {
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    padding: 0 50px; /* Add padding to the left and right */
+  }  
+  
+  .photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-photo {
+    border-radius: 50%; /* Makes the photo round */
+    max-width: 100%; /* Adjust the size of the photo */
+    height: auto;
+    border: 2px solid black; /* Adds a black border */
+  }
+
+  .projects-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: purple;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .projects-button:hover {
+    background-color: #5F009C;
+  }
+  
+  
