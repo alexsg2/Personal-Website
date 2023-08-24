@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
-import profilePhoto from './profile-photo.png'; // Replace with your image file path
+import profilePhoto from './profile-photo.png';
 
 const About = () => {
   return (

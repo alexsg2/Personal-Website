@@ -25,7 +25,7 @@ function IntroSection() {
             </p>
             <div className="intro-links">
                 <Nav.Link onClick={(event) => scrollToSection(event, '#about')} className="link-style">about →</Nav.Link>
-                <Nav.Link onClick={(event) => scrollToSection(event, '#skills')} className="link-style">skills &amp; experiences →</Nav.Link>
+                <Nav.Link onClick={(event) => scrollToSection(event, '#skills')} className="link-style">skills &amp; experience →</Nav.Link>
                 <Nav.Link onClick={(event) => scrollToSection(event, '#projects')} className="link-style">projects →</Nav.Link>
                 <Nav.Link onClick={(event) => scrollToSection(event, '#contact_me')} className="link-style">contact me →</Nav.Link>
             </div>
