@@ -91,14 +91,15 @@
   }
   
   .rounded-button {
-    padding: 20px 30px;
-    border-radius: 30px;
-    border: none;
-    background-color: #987ee7;;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #987ee7;
     color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
+    border: none;
     text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
   }
 
   .rounded-button:hover {

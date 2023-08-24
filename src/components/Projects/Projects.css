@@ -1,0 +1,51 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .project-header {
+    font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .project-header::after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 5px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .top-containers .bottom-containers {
+    margin-bottom: 20px;
+  }
+  
+  .go-to-projects-btn {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #987ee7;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .go-to-projects-btn:hover {
+    background-color: #5F009C;
+  }
+  
