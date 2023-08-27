@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ProjectContainer.css';
-import javaPhoto from '../Skills/SkillPhotos/java.png';
 
-const ProjectContainer = () => {
-  const [backgroundColor, setBackgroundColor] = useState('#f0f0f0');
+const ProjectContainer = ({ backgroundColor, projectName, languagesUsed, photoSrc }) => {
+  // Convert the languagesUsed string to an array
+  const languagesArray = languagesUsed.split(',');
 
   return (
     <div className="container">
       <div className="top-section" style={{ backgroundColor }}>
-        <img src={javaPhoto} alt="Java" className="rounded-photo" />
+        <img src={photoSrc} alt={projectName} className="centered-photo" />
       </div>
       <div className="bottom-section">
         <div className="project-info">
-          <p className="project-name">Project Name</p>
-          <p className="languages-used">Languages Used</p>
+          <p className="project-name">{projectName}</p>
+          <div className="languages-used">
+            {languagesArray.map((language, index) => (
+              <span key={index} className="language">
+                {language.trim()}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ProjectContainer;
