@@ -1,3 +1,8 @@
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   width: 300px;
   height: 280px;
@@ -56,6 +61,11 @@
   border-radius: 4px;
   font-size: 12px;
   color: #666;
+}
+
+.container-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 

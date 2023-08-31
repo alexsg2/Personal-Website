@@ -1,36 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectContainer from './ProjectContainer';
-import './Projects.css'; // Make sure to create this CSS file
-import javaPhoto from '../Skills/SkillPhotos/java.png';
+import './Projects.css'; 
 import MuSentencePhoto from './MuSentenceLogo.png';
 import NewWebsitePhoto from './NewWebsite.png';
 import SudokuPhoto from './Sudoku.png';
 import ReactPhoto from './React.png';
+import SisterCirclePhoto from './SisterCircle.png';
 
 
 const Projects = () => {
   return (
     <div id="projects" className="projects-container">
-      <h1 className="project-header">project portfolio</h1>
+      <h1 className="project-header">project showcase</h1>
       <div className="top-containers">
         <ProjectContainer
-        backgroundColor="#987ee7"
-        projectName="This Website"
-        languagesUsed="Javascript, HTML, CSS, React"
-        photoSrc={NewWebsitePhoto}
+          backgroundColor="#987ee7"
+          projectName="This Website"
+          languagesUsed="Javascript, HTML, CSS, React"
+          photoSrc={NewWebsitePhoto}
+          linkTo={"/projects/this_website"}
         />
         <ProjectContainer
           backgroundColor="orange"
           projectName="Sodoku Game"
           languagesUsed="Java, React, Node.js"
           photoSrc={SudokuPhoto}
+          linkTo={"/projects/sodoku_game"}
         />
         <ProjectContainer
-          backgroundColor="gray"
+          backgroundColor="#f8f9fa"
           projectName="Sister Circle"
           languagesUsed="React-Native, Node.js, Firebase"
-          photoSrc={javaPhoto}
+          photoSrc={SisterCirclePhoto}
         />
       </div>
       <div className="bottom-containers">

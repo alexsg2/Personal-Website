@@ -4,7 +4,7 @@ import javaPhoto from './SkillPhotos/java.png';
 import cPhoto from './SkillPhotos/c.png';
 import pythonPhoto from './SkillPhotos/python.png';
 import javascriptPhoto from './SkillPhotos/javascript.png';
-import reactPhoto from './SkillPhotos/react.png';
+import reactPhoto from './SkillPhotos/reactPhoto.png';
 import nodePhoto from './SkillPhotos/nodejs.png';
 import flaskPhoto from './SkillPhotos/flask.png';
 import bootstrapPhoto from './SkillPhotos/bootstrap.png';
