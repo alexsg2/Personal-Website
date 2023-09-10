@@ -28,33 +28,35 @@ function ProjectsPage() {
           projectName="This Website"
           languagesUsed="Javascript, HTML, CSS, React"
           photoSrc={NewWebsitePhoto}
-          linkTo={"/this_website"}
+          linkTo={"/projects/this_website"}
         />
         <ProjectContainer
           backgroundColor="orange"
-          projectName="Sodoku Game"
+          projectName="Sudoku Puzzle Game"
           languagesUsed="Java, React, Node.js"
           photoSrc={SudokuPhoto}
-          linkTo={"/sodoku_game"}
-        />
-        <ProjectContainer
-          backgroundColor="#f8f9fa"
-          projectName="Sister Circle"
-          languagesUsed="React-Native, Node.js, Firebase"
-          photoSrc={SisterCirclePhoto}
-          linkTo={"/sister_circle"}
-        />
-        <ProjectContainer
-          backgroundColor="#2C666E"
-          projectName="MuSentence"
-          languagesUsed="Python, Django, React"
-          photoSrc={MuSentencePhoto}
+          linkTo={"/projects/sodoku_game"}
         />
         <ProjectContainer
           backgroundColor="#517664"
           projectName="Old Website"
           languagesUsed="Javascript, HTML, CSS, React"
           photoSrc={ReactPhoto}
+          linkTo={"/projects/old_website"}
+        />
+        <ProjectContainer
+          backgroundColor="#f8f9fa"
+          projectName="Sister Circle"
+          languagesUsed="React-Native, Node.js, Firebase"
+          photoSrc={SisterCirclePhoto}
+          linkTo={"/projects/sister_circle"}
+        />
+        <ProjectContainer
+          backgroundColor="#2C666E"
+          projectName="MuSentence"
+          languagesUsed="Python, Django, React"
+          photoSrc={MuSentencePhoto}
+          linkTo={"/projects/musentence"}
         />
     </div>
   );

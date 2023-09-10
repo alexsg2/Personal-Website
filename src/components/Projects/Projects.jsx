@@ -23,7 +23,7 @@ const Projects = () => {
         />
         <ProjectContainer
           backgroundColor="orange"
-          projectName="Sodoku Game"
+          projectName="Sudoku Puzzle Game"
           languagesUsed="Java, React, Node.js"
           photoSrc={SudokuPhoto}
           linkTo={"/projects/sodoku_game"}
@@ -33,6 +33,7 @@ const Projects = () => {
           projectName="Sister Circle"
           languagesUsed="React-Native, Node.js, Firebase"
           photoSrc={SisterCirclePhoto}
+          linkTo={"/projects/sister_circle"}
         />
       </div>
       <div className="bottom-containers">
@@ -41,12 +42,14 @@ const Projects = () => {
           projectName="MuSentence"
           languagesUsed="Python, Django, React"
           photoSrc={MuSentencePhoto}
+          linkTo={"/projects/musentence"}
         />
         <ProjectContainer
           backgroundColor="#517664"
           projectName="Old Website"
           languagesUsed="Javascript, HTML, CSS, React"
           photoSrc={ReactPhoto}
+          linkTo={"/projects/old_website"}
         />
       </div>
       

@@ -1,0 +1,89 @@
+.split-screen {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh;
+}
+
+.right-section {
+  flex: 1;
+  text-align: center;
+}
+
+.left-section
+{
+  flex: 0.5;
+  display: flex;
+  justify-content: right; 
+}
+
+.project-title {
+  font-size: 24px; 
+}
+
+.project-description {
+  font-size: 16px; 
+  line-height: 1.5; 
+  font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  margin-top: 50px;
+}
+
+.info {
+  margin-top: 40px; 
+}
+
+.imagecontainer {
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 20px;
+}
+
+.centered-photo {
+  max-width: 100%; 
+  max-height: 100%;
+  object-fit: contain; 
+}
+
+.languages-used {
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.language {
+  padding: 2px 6px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+}
+
+.project-title {
+  font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #000000;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.project-title::after {
+  content: "";
+  display: block;
+  width: 600px; 
+  height: 5px; 
+  background-color: #000000;
+  position: absolute;
+  bottom: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -6,8 +6,8 @@ const ProjectContainer = ({ backgroundColor, projectName, languagesUsed, photoSr
   const languagesArray = languagesUsed.split(',');
 
   return (
-    <Link to={linkTo} className="container-link">
-      <div className="container">
+    <Link to={linkTo} className="project-container-link">
+      <div className="project-container">
         <div className="top-section" style={{ backgroundColor }}>
           <img src={photoSrc} alt={projectName} className="centered-photo" />
         </div>
