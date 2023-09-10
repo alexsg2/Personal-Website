@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Home, ProjectsPage } from './components';
-import { useEffect } from 'react';
 import ThisWebsite from './components/ProjectDescription/Description/ThisWebsite';
 import Sudoku from './components/ProjectDescription/Description/Sudoku';
 import SisterCircle from './components/ProjectDescription/Description/SisterCircle';
@@ -12,13 +11,14 @@ import OldWebsite from './components/ProjectDescription/Description/OldWebsite';
 
   Home - This is our home page. (Will Start Here)
   Project - This a Project Page with more details.
+  ThisWebsite - Project Description Page
+  Sudoku - Project Description Page
+  SisterCircle - Project Description Page
+  MuSentence - Project Description Page
+  OldWebsite - Project Description Page
 */
 
 function App() {
-  useEffect(() => {
-    document.title = "Alexander Georgiev";
-  }, []);
-
   return (
     <Router>
       <Routes>
