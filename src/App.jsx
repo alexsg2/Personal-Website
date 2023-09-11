@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Home, ProjectsPage } from './components';
 import ThisWebsite from './components/ProjectDescription/Description/ThisWebsite';
 import Sudoku from './components/ProjectDescription/Description/Sudoku';
@@ -20,17 +20,15 @@ import OldWebsite from './components/ProjectDescription/Description/OldWebsite';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/projects/this_website" element={<ThisWebsite />} />
-        <Route path="/projects/sodoku_game" element={<Sudoku />} />
-        <Route path="/projects/sister_circle" element={<SisterCircle />} />
-        <Route path="/projects/musentence" element={<MuSentence />} />
-        <Route path="/projects/old_website" element={<OldWebsite />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/projects/this_website" element={<ThisWebsite />} />
+      <Route path="/projects/sudoku_game" element={<Sudoku />} />
+      <Route path="/projects/sister_circle" element={<SisterCircle />} />
+      <Route path="/projects/musentence" element={<MuSentence />} />
+      <Route path="/projects/old_website" element={<OldWebsite />} />
+    </Routes>
   );
 }
 
