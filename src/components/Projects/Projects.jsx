@@ -26,7 +26,7 @@ const Projects = () => {
           projectName="Sudoku Puzzle Game"
           languagesUsed="Java, React, Node.js"
           photoSrc={SudokuPhoto}
-          linkTo={"/projects/sodoku_game"}
+          linkTo={"/projects/sudoku_game"}
         />
         <ProjectContainer
           backgroundColor="#f8f9fa"

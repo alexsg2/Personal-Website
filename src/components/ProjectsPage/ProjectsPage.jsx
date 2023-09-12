@@ -35,7 +35,7 @@ function ProjectsPage() {
           projectName="Sudoku Puzzle Game"
           languagesUsed="Java, React, Node.js"
           photoSrc={SudokuPhoto}
-          linkTo={"/projects/sodoku_game"}
+          linkTo={"/projects/sudoku_game"}
         />
         <ProjectContainer
           backgroundColor="#517664"
