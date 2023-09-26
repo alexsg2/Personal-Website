@@ -10,8 +10,8 @@ import SudokuPage from "./ProjectDescription/Description/Sudoku"; // Import the 
 import SisterPage from "./ProjectDescription/Description/SisterCircle"; // Import the 'SisterCirlce' component from the 'ProjectDescription' directory
 import MuSentencePage from "./ProjectDescription/Description/MuSentence"; // Import the 'MuSentence' component from the 'ProjectDescription' directory
 import OldWebsitePage from "./ProjectDescription/Description/OldWebsite"; // Import the 'OldWebsite' component from the 'ProjectDescription' directory
-
+import LostandFoundWebsitePage from "./ProjectDescription/Description/LostAndFound"; // Import the 'OldWebsite' component from the 'ProjectDescription' directory
 
 
 // Exports all the components
-export { Home, IntroSection, About, Skills, Projects, ContactMe, ProjectsPage, ThisWebsitePage, SudokuPage, SisterPage, MuSentencePage, OldWebsitePage }; 
+export { Home, IntroSection, About, Skills, Projects, ContactMe, ProjectsPage, ThisWebsitePage, SudokuPage, SisterPage, MuSentencePage, OldWebsitePage, LostandFoundWebsitePage}; 

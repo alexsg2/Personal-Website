@@ -7,6 +7,7 @@ import NewWebsitePhoto from './NewWebsite.png';
 import SudokuPhoto from './Sudoku.png';
 import ReactPhoto from './React.png';
 import SisterCirclePhoto from './SisterCircle.png';
+import VTLogoPhoto from './VTLogo.png';
 
 
 const Projects = () => {
@@ -29,14 +30,21 @@ const Projects = () => {
           linkTo={"/projects/sudoku_game"}
         />
         <ProjectContainer
+          backgroundColor="#8D1D41"
+          projectName="VT Lost and Found"
+          languagesUsed="Flask, MongoDB, React, GoogleVision"
+          photoSrc={VTLogoPhoto}
+          linkTo={"/projects/lost_and_found"}
+        />
+      </div>
+      <div className="bottom-containers">
+        <ProjectContainer
           backgroundColor="#f8f9fa"
           projectName="Sister Circle"
           languagesUsed="React-Native, Node.js, Firebase"
           photoSrc={SisterCirclePhoto}
           linkTo={"/projects/sister_circle"}
         />
-      </div>
-      <div className="bottom-containers">
         <ProjectContainer
           backgroundColor="#2C666E"
           projectName="MuSentence"

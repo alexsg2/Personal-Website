@@ -2,7 +2,7 @@
 
 Welcome to my Person Website! This is a way to showcase who I am and my skills and portfolio. Please have a look!
 
-WEBSITE LINK
+https://alexsg2.github.io/Personal-Website/
 
 ## Running the Application: Step-by-Step Guide
 

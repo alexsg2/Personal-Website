@@ -5,6 +5,8 @@ import Sudoku from './components/ProjectDescription/Description/Sudoku';
 import SisterCircle from './components/ProjectDescription/Description/SisterCircle';
 import MuSentence from './components/ProjectDescription/Description/MuSentence';
 import OldWebsite from './components/ProjectDescription/Description/OldWebsite';
+import LostandFound from './components/ProjectDescription/Description/LostAndFound';
+
 
 /*
   Setting Up Routing Between Each Site Page:
@@ -28,6 +30,7 @@ function App() {
       <Route path="/projects/sister_circle" element={<SisterCircle />} />
       <Route path="/projects/musentence" element={<MuSentence />} />
       <Route path="/projects/old_website" element={<OldWebsite />} />
+      <Route path="/projects/lost_and_found" element={<LostandFound />} />
     </Routes>
   );
 }

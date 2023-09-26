@@ -8,6 +8,8 @@ import NewWebsitePhoto from '../Projects/NewWebsite.png';
 import SudokuPhoto from '../Projects/Sudoku.png';
 import ReactPhoto from '../Projects/React.png';
 import SisterCirclePhoto from '../Projects/SisterCircle.png';
+import VTLogoPhoto from '../Projects/VTLogo.png';
+
 
 function ProjectsPage() {
   useEffect(() => {
@@ -23,6 +25,13 @@ function ProjectsPage() {
         project page
         <div className="header-line"></div>
       </div>
+        <ProjectContainer
+          backgroundColor="#8D1D41"
+          projectName="VT Lost and Found"
+          languagesUsed="Flask, MongoDB, React, GoogleVision"
+          photoSrc={VTLogoPhoto}
+          linkTo={"/projects/lost_and_found"}
+        />
         <ProjectContainer
           backgroundColor="#987ee7"
           projectName="This Website"
