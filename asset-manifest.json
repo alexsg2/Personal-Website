@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.310c4cfd.css",
-    "main.js": "/Personal-Website/static/js/main.241c87f0.js",
+    "main.css": "/Personal-Website/static/css/main.f4379ba1.css",
+    "main.js": "/Personal-Website/static/js/main.ef0c79ca.js",
     "static/media/programmer.gif": "/Personal-Website/static/media/programmer.07d8ecf68bdc21a74e2b.gif",
     "static/media/resumePDF.pdf": "/Personal-Website/static/media/resumePDF.a396787493d18c207e93.pdf",
     "static/media/NewWebsite.png": "/Personal-Website/static/media/NewWebsite.2255fb0ea87e71cea93c.png",
@@ -20,11 +20,11 @@
     "static/media/git.png": "/Personal-Website/static/media/git.396a5b09533ba7efb6af.png",
     "static/media/nodejs.png": "/Personal-Website/static/media/nodejs.4297b20b421b540d1443.png",
     "index.html": "/Personal-Website/index.html",
-    "main.310c4cfd.css.map": "/Personal-Website/static/css/main.310c4cfd.css.map",
-    "main.241c87f0.js.map": "/Personal-Website/static/js/main.241c87f0.js.map"
+    "main.f4379ba1.css.map": "/Personal-Website/static/css/main.f4379ba1.css.map",
+    "main.ef0c79ca.js.map": "/Personal-Website/static/js/main.ef0c79ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.310c4cfd.css",
-    "static/js/main.241c87f0.js"
+    "static/css/main.f4379ba1.css",
+    "static/js/main.ef0c79ca.js"
   ]
 }
