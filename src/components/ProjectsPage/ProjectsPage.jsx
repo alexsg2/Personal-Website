@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import ProjectContainer from '../Projects/ProjectContainer'; // Make sure to provide the correct path
-import './ProjectsPage.css'; // Import the new CSS file
-import { FaArrowLeft } from 'react-icons/fa'; // Import the arrow icon
+import ProjectContainer from '../Projects/ProjectContainer';
+import { FaArrowLeft } from 'react-icons/fa';
 import MuSentencePhoto from '../Projects/MuSentenceLogo.png';
 import NewWebsitePhoto from '../Projects/NewWebsite.png';
 import SudokuPhoto from '../Projects/Sudoku.png';
@@ -17,14 +16,15 @@ function ProjectsPage() {
   }, []);
 
   return (
-    <div className="project-page">
-      <Link to="/" className="back-button">
-        <FaArrowLeft className="back-icon" /> Back to Home
+    <div className="text-center p-5 overflow-x-hidden">
+      <Link to="/" className="mb-5 flex items-center absolute top-5 left-5 no-underline text-gray-700">
+        <FaArrowLeft className="mr-2" /> Back to Home
       </Link>
-      <div className="project-header">
+      <div className="font-bold text-3xl sm:text-4xl md:text-5xl leading-tight text-black mt-10 mb-16 relative px-4">
         project page
-        <div className="header-line"></div>
+        <div className="block w-full max-w-[500px] h-[5px] bg-black absolute -bottom-5 left-1/2 -translate-x-1/2"></div>
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px] mx-auto px-4">
         <ProjectContainer
           backgroundColor="#8D1D41"
           projectName="VT Lost and Found"
@@ -67,6 +67,7 @@ function ProjectsPage() {
           photoSrc={MuSentencePhoto}
           linkTo={"/projects/musentence"}
         />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ProjectContainer from './ProjectContainer';
-import './Projects.css'; 
 import MuSentencePhoto from './MuSentenceLogo.png';
 import NewWebsitePhoto from './NewWebsite.png';
 import SudokuPhoto from './Sudoku.png';
@@ -12,9 +11,11 @@ import VTLogoPhoto from './VTLogo.png';
 
 const Projects = () => {
   return (
-    <div id="projects" className="projects-container">
-      <h1 className="project-header">project showcase</h1>
-      <div className="top-containers">
+    <div id="projects" className="flex flex-col justify-start items-center min-h-screen w-full px-4 md:px-0">
+      <h1 className="font-bold text-5xl leading-[48px] text-black mt-10 mb-16 relative after:content-[''] after:block after:h-[5px] after:bg-black after:absolute after:-bottom-5 after:left-0 after:w-full after:max-w-[500px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:w-[500px] md:after:max-w-none">
+        project showcase
+      </h1>
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-8 w-full max-w-[1200px] mb-5">
         <ProjectContainer
           backgroundColor="#987ee7"
           projectName="This Website"
@@ -36,8 +37,6 @@ const Projects = () => {
           photoSrc={VTLogoPhoto}
           linkTo={"/projects/lost_and_found"}
         />
-      </div>
-      <div className="bottom-containers">
         <ProjectContainer
           backgroundColor="#f8f9fa"
           projectName="Sister Circle"
@@ -60,9 +59,11 @@ const Projects = () => {
           linkTo={"/projects/old_website"}
         />
       </div>
-      
+
       <Link to="/projects">
-        <button className="go-to-projects-btn">Projects Page for Full List</button>
+        <button className="mt-10 py-2.5 px-5 text-lg bg-brand text-white border-0 rounded-[10px] cursor-pointer hover:bg-brand-hover no-underline">
+          Projects Page for Full List
+        </button>
       </Link>
     </div>
   );
