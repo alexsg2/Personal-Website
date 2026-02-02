@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Personal-Website/static/css/main.ac4e0f25.css",
+    "main.js": "/Personal-Website/static/js/main.e0bc895a.js",
+    "static/media/image.png": "/Personal-Website/static/media/image.853dc74f5e4953645b30.png",
+    "static/media/programmer.gif": "/Personal-Website/static/media/programmer.07d8ecf68bdc21a74e2b.gif",
+    "static/media/NewWebsite.png": "/Personal-Website/static/media/NewWebsite.2255fb0ea87e71cea93c.png",
+    "static/media/resumePDF.pdf": "/Personal-Website/static/media/resumePDF.59cc0adf25798ee1b2fb.pdf",
+    "static/media/MuSentenceLogo.png": "/Personal-Website/static/media/MuSentenceLogo.05e7f93c81f779a6826a.png",
+    "static/media/java.png": "/Personal-Website/static/media/java.898b73431f16eeadf726.png",
+    "static/media/c.png": "/Personal-Website/static/media/c.d083731589e745941c43.png",
+    "static/media/SisterCircle.png": "/Personal-Website/static/media/SisterCircle.67aa131b8170eeaa5f56.png",
+    "static/media/flask.png": "/Personal-Website/static/media/flask.12c3f69d7b74539ac6f6.png",
+    "static/media/Sudoku.png": "/Personal-Website/static/media/Sudoku.95c4f2aeccef9702bc6f.png",
+    "static/media/vscode.png": "/Personal-Website/static/media/vscode.d793c746fbc937f66e3d.png",
+    "static/media/React.png": "/Personal-Website/static/media/React.b37f0a4b7134b3c99d6e.png",
+    "static/media/reactPhoto.png": "/Personal-Website/static/media/reactPhoto.b37f0a4b7134b3c99d6e.png",
+    "static/media/VTLogo.png": "/Personal-Website/static/media/VTLogo.ae71c6a77dd7cf3153fc.png",
+    "static/media/figma.png": "/Personal-Website/static/media/figma.d388fa89e1c658147a6d.png",
+    "static/media/python.png": "/Personal-Website/static/media/python.f7f12e1bf59e577656a2.png",
+    "static/media/git.png": "/Personal-Website/static/media/git.396a5b09533ba7efb6af.png",
+    "static/media/nodejs.png": "/Personal-Website/static/media/nodejs.4297b20b421b540d1443.png",
+    "index.html": "/Personal-Website/index.html",
+    "main.ac4e0f25.css.map": "/Personal-Website/static/css/main.ac4e0f25.css.map",
+    "main.e0bc895a.js.map": "/Personal-Website/static/js/main.e0bc895a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac4e0f25.css",
+    "static/js/main.e0bc895a.js"
+  ]
+}
