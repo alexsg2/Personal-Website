@@ -1,6 +1,6 @@
 # My Personal Website - Alexander Georgiev
 
-Welcome to my Person Website! This is a way to showcase who I am and my skills and portfolio. Please have a look!
+Welcome to my Personal Website! This is a way to showcase who I am and my skills and portfolio. Please have a look!
 
 https://alexsg2.github.io/Personal-Website/
 
