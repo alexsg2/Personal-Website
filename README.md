@@ -28,17 +28,3 @@ https://alexsg2.github.io/Personal-Website/
 
         npm start
 
-Added Features:
-- [x] Intro Section
-- [x] About Section
-- [x] Skills/Experience Section
-- [x] Project Section
-- [x] Project Page Section
-- [x] Project Description Sections
-- [x] Contact Me Section
-
-Things needed to be added:
-- [ ] Mobile Screen Compatablility
-- [ ] NavBar (Maybe)
-- [ ] Skills Scroller
-
