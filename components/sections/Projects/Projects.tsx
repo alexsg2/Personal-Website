@@ -3,10 +3,10 @@
 import { useRef, useState } from 'react';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
-import { projects } from '@/data/projects';
+import { projects } from '@/info/projects';
 import ProjectCard from '@/components/ui/ProjectCard';
 import ProjectModal from '@/components/ui/ProjectModal';
-import type { Project } from '@/data/projects';
+import type { Project } from '@/info/projects';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },

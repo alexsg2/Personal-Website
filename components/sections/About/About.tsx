@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { skillGroups } from '@/data/skills';
+import { skillGroups } from '@/info/skills';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -17,7 +17,7 @@ const fadeUp = {
 };
 
 const currentlyItems = [
-  'Software Engineer @ CoStar Group',
+  'Full Stack Software Engineer @ CoStar Group',
   'B.S. Computer Science, Virginia Tech \u201924',
 ];
 
@@ -38,7 +38,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 sm:gap-10 lg:gap-14 2xl:gap-16">
           {/* Left — Photo + socials */}
           <div className="flex flex-col">
-            <div className="border border-[var(--border)] rounded-sm overflow-hidden flex-1">
+            <div className="border border-[var(--border)] rounded-xl overflow-hidden flex-1">
               <Image
                 src="/images/headshot.png"
                 alt="Alex Georgiev"
@@ -84,16 +84,21 @@ export default function About() {
 
             <div className="space-y-3 sm:space-y-4 lg:space-y-4 mb-4 sm:mb-5 lg:mb-6">
               <p className="font-sans text-sm lg:text-base leading-relaxed">
-                I love to code. Whether it&apos;s building full-stack apps at work,
-                hacking on side projects, or picking up a new framework over a weekend —
-                writing software is what I enjoy doing most. This site is where I
-                showcase my projects and everything I&apos;m working on.
+                Hello, my name is Alex. I am a Full Stack Software Engineer
+                specializing in building web applications across React, Node.js, .NET,
+                and SQL.
               </p>
               <p className="font-sans text-sm lg:text-base leading-relaxed">
-                I graduated from Virginia Tech in 2024 with a B.S. in Computer Science
-                and a minor in Human-Computer Interaction. I&apos;m currently a Full Stack
-                Software Engineer at CoStar Group, where I build and scale production
-                systems across React, Node.js, .NET, and SQL.
+                I graduated from Virginia Tech with a B.S. in Computer Science and a
+                minor in Human-Computer Interaction. Since then I&apos;ve been working
+                at CoStar Group building and maintaining production systems across the
+                full stack.
+              </p>
+              <p className="font-sans text-sm lg:text-base leading-relaxed">
+                Outside of work I&apos;m always building something. I like taking ideas
+                and turning them into real projects, whether it&apos;s a game, a tool,
+                or just something I want to learn. This site is where I keep all of
+                that and share what I&apos;ve been working on.
               </p>
             </div>
 

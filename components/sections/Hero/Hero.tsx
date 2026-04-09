@@ -8,59 +8,69 @@ const ease = [0.22, 1, 0.36, 1];
 function FloatingGraphic() {
   return (
     <div className="relative w-full h-full min-h-[250px] sm:min-h-[300px]">
+      {/* Inner capsule — clockwise */}
       <motion.div
-        className="absolute inset-8 rounded-full border border-[var(--border)]"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+        className="absolute rounded-full"
+        style={{ width: '34%', height: '68%', top: '16%', left: '33%', border: '1px solid color-mix(in srgb, var(--accent) 40%, transparent)' }}
+        animate={{ rotate: 360, scale: [1, 1.06, 1] }}
+        transition={{
+          rotate: { duration: 36, repeat: Infinity, ease: 'linear' },
+          scale: { duration: 9, repeat: Infinity, ease: 'easeInOut' },
+        }}
       />
+      {/* Outer capsule — counter-clockwise */}
       <motion.div
-        className="absolute inset-16 rounded-full border border-[var(--border)]"
-        animate={{ rotate: -360 }}
-        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        className="absolute rounded-full"
+        style={{ width: '52%', height: '92%', top: '4%', left: '24%', border: '1px solid color-mix(in srgb, var(--accent) 30%, transparent)' }}
+        animate={{ rotate: -360, scale: [1, 1.05, 1] }}
+        transition={{
+          rotate: { duration: 28, repeat: Infinity, ease: 'linear' },
+          scale: { duration: 11, repeat: Infinity, ease: 'easeInOut', delay: 4 },
+        }}
       />
+
+      {/* Inner ring orbiters — paired, 120° apart */}
+      {[0, 120, 240].map((offset) => (
+        <motion.div
+          key={`inner-${offset}`}
+          className="absolute top-1/2 left-1/2"
+          style={{ transformOrigin: '0 -60px', rotate: offset }}
+          animate={{ rotate: offset + 360 }}
+          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        >
+          <motion.div
+            className="w-2 h-2 rounded-full bg-[var(--accent)] shadow-[0_0_6px_var(--accent)]"
+            style={{ opacity: 0.8 }}
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: offset / 360 * 2 }}
+          />
+        </motion.div>
+      ))}
+
+      {/* Outer ring orbiters — paired, 180° apart, counter-clockwise */}
+      {[0, 180].map((offset) => (
+        <motion.div
+          key={`outer-${offset}`}
+          className="absolute top-1/2 left-1/2"
+          style={{ transformOrigin: '0 -120px', rotate: offset }}
+          animate={{ rotate: offset - 360 }}
+          transition={{ duration: 16, repeat: Infinity, ease: 'linear' }}
+        >
+          <motion.div
+            className="w-2.5 h-2.5 rounded-full bg-[var(--foreground)]"
+            style={{ opacity: 0.5 }}
+            animate={{ scale: [1, 1.25, 1] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: offset / 360 * 3 }}
+          />
+        </motion.div>
+      ))}
+
+      {/* Center dot */}
       <motion.div
-        className="absolute top-1/2 left-1/2"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
-        style={{ transformOrigin: '0 -80px' }}
-      >
-        <div className="w-2.5 h-2.5 rounded-full bg-[var(--accent)] opacity-80" />
-      </motion.div>
-      <motion.div
-        className="absolute top-1/2 left-1/2"
-        animate={{ rotate: -360 }}
-        transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
-        style={{ transformOrigin: '0 -120px' }}
-      >
-        <div className="w-1.5 h-1.5 rounded-full bg-[var(--foreground)] opacity-40" />
-      </motion.div>
-      <motion.div
-        className="absolute top-1/2 left-1/2"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
-        style={{ transformOrigin: '0 -60px' }}
-      >
-        <div className="w-2 h-2 rounded-full bg-[var(--muted)] opacity-50" />
-      </motion.div>
-      <motion.div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[var(--accent)]"
-        animate={{ scale: [1, 1.3, 1] }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-[var(--accent)] shadow-[0_0_12px_var(--accent)]"
+        animate={{ scale: [1, 1.2, 1], opacity: [0.85, 1, 0.85] }}
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
       />
-      {[...Array(5)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute w-1 h-1 rounded-full bg-[var(--muted)] opacity-30"
-          style={{ top: `${25 + i * 12}%`, left: `${20 + i * 15}%` }}
-          animate={{ y: [0, -15, 0], opacity: [0.2, 0.5, 0.2] }}
-          transition={{
-            duration: 3 + i * 0.5,
-            repeat: Infinity,
-            ease: 'easeInOut',
-            delay: i * 0.4,
-          }}
-        />
-      ))}
     </div>
   );
 }
@@ -97,7 +107,7 @@ export default function Hero() {
             transition={{ duration: 0.6, ease, delay: 0.25 }}
             className="font-sans text-sm sm:text-base lg:text-lg leading-relaxed text-[var(--muted)] mt-4 sm:mt-6 lg:mt-8 2xl:mt-12 max-w-xl sm:mx-0 mx-auto"
           >
-            I build things for the web — and occasionally just for fun.
+            I like to build new things and bring ideas to life.
           </motion.p>
 
           {/* Resume + Contact links */}

@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
-import { projects } from '@/data/projects';
-import type { ProjectType, Project } from '@/data/projects';
+import { projects } from '@/info/projects';
+import type { ProjectType, Project } from '@/info/projects';
 import ProjectCard from '@/components/ui/ProjectCard';
 import ProjectModal from '@/components/ui/ProjectModal';
 import ProjectFilter from '@/components/ui/ProjectFilter';

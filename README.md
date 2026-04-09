@@ -1,30 +1,116 @@
-# My Personal Website - Alexander Georgiev
+# Alex Georgiev — Personal Website
 
-Welcome to my Personal Website! This is a way to showcase who I am and my skills and portfolio. Please have a look!
+My personal portfolio site built with Next.js, TypeScript, and Tailwind CSS. Designed with an editorial, minimalist aesthetic featuring warm tones, intentional typography, and Framer Motion animations.
 
-https://alexsg2.github.io/Personal-Website/
+**Live:** [alexsg2.github.io/Personal-Website](https://alexsg2.github.io/Personal-Website)
 
-## Running the Application: Step-by-Step Guide
+## Tech Stack
 
-### 1. Clone the Repository
+- **Framework:** Next.js 14 (App Router, static export)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React + Devicons
+- **Hosting:** GitHub Pages
 
-**Clone the Repository**: Copy and paste this command into the terminal and press Enter. This will download the application to your computer.
+## Getting Started
 
-    git clone https://github.com/alexsg2/Personal-Website
+### Prerequisites
 
-### 2. Run the Website
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm (comes with Node.js)
 
-1. **Open New Terminal**: If you closed the terminal, open a new one.
+### Installation
 
-2. **Navigate to Frontend Folder**: Type the following command and press Enter.
+1. Clone the repository:
 
-        cd path/to/repository/front-end
+   ```bash
+   git clone https://github.com/alexsg2/Personal-Website.git
+   cd Personal-Website
+   ```
 
-3. **Install Dependencies**: Copy and paste this command and press Enter. It will help set up the frontend part of the application.
+2. Install dependencies:
 
-        npm install
+   ```bash
+   npm install
+   ```
 
-4. **Start Frontend**: Copy and paste this command and press Enter. This will show the application in your web browser.
+3. Start the development server:
 
-        npm start
+   ```bash
+   npm run dev
+   ```
 
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Building for Production
+
+Generate a static export to the `out/` directory:
+
+```bash
+npm run build
+```
+
+### Other Commands
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server on localhost:3000 |
+| `npm run build` | Static export to `/out` |
+| `npm run lint` | Run ESLint |
+| `npx tsc --noEmit` | Type check without emitting |
+
+## Project Structure
+
+```
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx          # Root layout (fonts, navbar, footer)
+│   ├── page.tsx            # Home page (Hero section)
+│   ├── about/              # About page
+│   └── projects/           # Filterable project gallery
+├── components/
+│   ├── layout/             # App-wide layout components
+│   │   ├── Footer/
+│   │   ├── Navbar/
+│   │   ├── SectionNav/
+│   │   ├── SnapManager/
+│   │   └── ThemeProvider/
+│   ├── sections/           # Page-level content sections
+│   │   ├── About/
+│   │   ├── Hero/
+│   │   └── Projects/
+│   └── ui/                 # Reusable UI components
+│       ├── ProjectCard/
+│       ├── ProjectFilter/
+│       └── ProjectModal/
+├── info/                   # Content data (projects, skills)
+│   ├── projects.ts
+│   └── skills.ts
+└── public/                 # Static assets (images, resume)
+```
+
+Each component lives in its own folder, making it easy to add co-located styles, tests, or utilities alongside it.
+
+## Adding a New Project
+
+Edit `info/projects.ts` and add an entry to the `projects` array:
+
+```ts
+{
+  id: 'my-project',
+  title: 'My Project',
+  shortDescription: 'One-line summary for the card.',
+  longDescription: 'Full description shown in the modal.',
+  thumbnail: '/images/projects/my-project.png',
+  date: '2026-01',
+  type: 'personal',
+  technologies: ['React', 'TypeScript'],
+  featured: true,
+  repoUrl: 'https://github.com/...',
+  liveUrl: 'https://...',
+}
+```
+
+Set `featured: true` to show it on the home page (top 6 by date).
+
+Drop the thumbnail image into `public/images/projects/`.

@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
-import type { ProjectType } from '@/data/projects';
+import type { ProjectType } from '@/info/projects';
 
 const typeFilters: { label: string; value: ProjectType | 'all' }[] = [
   { label: 'All', value: 'all' },
