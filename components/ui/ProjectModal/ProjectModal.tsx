@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { X } from 'lucide-react';
 import type { Project } from '@/info/projects';
+import { getImagePath } from '@/lib/image-path';
 
 function DevpostIcon({ size = 16 }: { size?: number }) {
   return (
@@ -53,7 +54,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Thumbnail */}
         <div className="relative w-full aspect-[16/9] bg-[var(--background)]">
           <Image
-            src={project.thumbnail}
+            src={getImagePath(project.thumbnail)}
             alt={project.title}
             fill
             sizes="(max-width: 768px) 100vw, 672px"

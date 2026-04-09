@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { skillGroups } from '@/info/skills';
+import { getImagePath } from '@/lib/image-path';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -40,7 +41,7 @@ export default function About() {
           <div className="flex flex-col">
             <div className="border border-[var(--border)] rounded-xl overflow-hidden flex-1">
               <Image
-                src="/images/headshot.png"
+                src={getImagePath('/images/headshot.png')}
                 alt="Alex Georgiev"
                 width={400}
                 height={500}
